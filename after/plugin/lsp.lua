@@ -1,13 +1,5 @@
 -- Initialize Mason and Mason-LSP
 require("mason").setup()
-require("mason-lspconfig").setup({
-  ensure_installed = {
-    "clangd",
-    "rust_analyzer",
-    "lua_ls",
-  },
-  automatic_enable = true
-})
 
 -- Load lspconfig
 local lspconfig = require("lspconfig")
@@ -46,6 +38,7 @@ lspconfig.rust_analyzer.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+
 
 -- Lua
 lspconfig.lua_ls.setup({

@@ -85,4 +85,11 @@ return require('packer').startup(function(use)
         end,
     });
 
+    use {
+        'onsails/lspkind.nvim'
+    }
+
+    use {
+        "folke/zen-mode.nvim"
+    }
 end)

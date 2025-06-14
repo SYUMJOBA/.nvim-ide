@@ -33,5 +33,15 @@ cmp.setup({
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
 	},
-})
+    formatting = {
+        format = require("lspkind").cmp_format({
+            mode = "symbol_text",  -- show symbol + text
+            maxwidth = 50,
+            menu = {
+                nvim_lsp = "[LSP]",
+                luasnip = "[Snip]",
+            },
+        }),
+    },
 
+})
