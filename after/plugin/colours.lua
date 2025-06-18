@@ -66,18 +66,18 @@ function JobaTheme()
     sethl("macro", "#F373FF"); -- macros
     sethl("statement", "#99ffbb"); -- few intereseting words in explorer
     sethl("operator", "#DED8A6"); -- operators
-    sethl("structure", "#ff0000", "#ff0000");
+    sethl("structure", "#ff0000", "#0000ff");
     sethl("label", "#ffff00", "#ff0000");
     sethl("special", "#81D3FF"); -- self variable
-    sethl("conditional", "#ffffff", "#ff0000");
-    sethl("precondit", "#ffffff", "#ff0000");
+    sethl("conditional", "#888888");
+    sethl("precondit", "#ff0000", "#00ff00");
     sethl("storageclass", "#ffffff", "#ffff00");
     sethl("Delimiter", "#9C9C9C"); -- graphcs, arrows ... everything
-    sethl("SpecialChar", "#ffffff", "#00ffff");
-    sethl("tag", "#ffffff", "#ff0000");
+    sethl("SpecialChar", "#444444"); --unused underscores
+    sethl("tag", "#00ff00"); --idk but there was somethign in the documentation
     sethl("debug", "#ffffff", "#ff00ff");
     sethl("underlined", "#ffffff", "#ff0000");
-    sethl("ignore", "#ffffff", "#00ff00");
+    sethl("ignore", "#0000ff", "#00ff00");
     sethl("@lsp.type.enumMember", "#F588FF");
     sethl("@keyword.type", "#82ECFF");
 
