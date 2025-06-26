@@ -40,6 +40,15 @@ lspconfig.rust_analyzer.setup({
 })
 
 
+-- Lua environment table
+-- Build the library table correctly
+local lua_runtime_path = {}
+for _, path in ipairs(vim.api.nvim_get_runtime_file("", true)) do
+    lua_runtime_path[path] = true;
+end
+
+lua_runtime_path[vim.fn.expand('$HOME/.wine/drive_c/Program Files/df_51_11_win/hack/lua')] = true;
+
 -- Lua
 lspconfig.lua_ls.setup({
   on_attach = on_attach,
@@ -48,11 +57,12 @@ lspconfig.lua_ls.setup({
     Lua = {
       runtime = { version = 'LuaJIT' },
       diagnostics = {
-        globals = { 'vim' },
+        globals = { 'vim', 'df', 'dfhack', 'utils' },
       },
       workspace = {
-        library = vim.api.nvim_get_runtime_file("", true),
+        library = lua_runtime_path,
         checkThirdParty = false,
+
       },
       telemetry = { enable = false },
     },

@@ -58,7 +58,7 @@ end
 function JobaTheme()
     sethl("normal", "#DDDBCB", "#060D12");
 
-    sethl("function", "#DE73FF"); -- functions
+    sethl("function", "#8EF4F0"); -- functions | was #DE73FF
     sethl("Keyword", "#6297D1"); -- was #2286FF
     sethl("type", "#5162FF", "", { bold = true });
     sethl("identifier", "#C1D8DC"); -- variables in structs
@@ -67,7 +67,7 @@ function JobaTheme()
     sethl("statement", "#99ffbb"); -- few intereseting words in explorer
     sethl("operator", "#DED8A6"); -- operators
     sethl("structure", "#ff0000", "#0000ff");
-    sethl("label", "#ffff00", "#ff0000");
+    sethl("label", "#FFD05F"); -- things like 'outer and 'inner (not lifetimes)
     sethl("special", "#81D3FF"); -- self variable
     sethl("conditional", "#888888");
     sethl("precondit", "#ff0000", "#00ff00");
@@ -75,9 +75,9 @@ function JobaTheme()
     sethl("Delimiter", "#9C9C9C"); -- graphcs, arrows ... everything
     sethl("SpecialChar", "#444444"); --unused underscores
     sethl("tag", "#00ff00"); --idk but there was somethign in the documentation
-    sethl("debug", "#ffffff", "#ff00ff");
-    sethl("underlined", "#ffffff", "#ff0000");
-    sethl("ignore", "#0000ff", "#00ff00");
+    sethl("debug", "#ff5522", "#111111");
+    sethl("underlined", "#ffffff");
+    sethl("ignore", "#0000ff");
     sethl("@lsp.type.enumMember", "#F588FF");
     sethl("@keyword.type", "#82ECFF");
 
