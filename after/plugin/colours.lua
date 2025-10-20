@@ -71,7 +71,7 @@ function JobaTheme()
     sethl("special", "#81D3FF"); -- self variable
     sethl("conditional", "#888888");
     sethl("precondit", "#ff0000", "#00ff00");
-    sethl("storageclass", "#ffffff", "#ffff00");
+    sethl("storageclass", "#ffffff", "#ffff00"); -- const (?)
     sethl("Delimiter", "#9C9C9C"); -- graphcs, arrows ... everything
     sethl("SpecialChar", "#444444"); --unused underscores
     sethl("tag", "#00ff00"); --idk but there was somethign in the documentation
@@ -80,7 +80,7 @@ function JobaTheme()
     sethl("ignore", "#0000ff");
     sethl("@lsp.type.enumMember", "#F588FF");
     sethl("@keyword.type", "#82ECFF");
-
+    
     sethl("comment", "#646D6E", "", { italic = true });
     sethl("todo", "#ffffbb", "#ff0000");
 

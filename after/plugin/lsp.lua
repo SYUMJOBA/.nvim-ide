@@ -39,6 +39,7 @@ lspconfig.rust_analyzer.setup({
   capabilities = capabilities,
 })
 
+lspconfig.ts_ls.setup {}
 
 -- Lua environment table
 -- Build the library table correctly
